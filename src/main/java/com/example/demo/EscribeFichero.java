@@ -45,9 +45,7 @@ public class EscribeFichero {
 	 * metodo para cerrar el fichero de escritura
 	 */
 	public void cerrarFichero() {
-		     // En el finally cerramos el fichero, para asegurarnos
-	         // que se cierra tanto si todo va bien como si salta 
-	         // una excepcion.
+		     
 	         try{                    
 	            if( null != pw ){   
 	               pw.close();     
