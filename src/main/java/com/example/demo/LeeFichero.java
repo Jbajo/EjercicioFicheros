@@ -10,7 +10,6 @@ import java.io.*;
 
 public class LeeFichero {
 	
-	private File archivo;
 	private FileReader fr;
 	private BufferedReader br;
 	
@@ -20,9 +19,8 @@ public class LeeFichero {
 	 */
 	public LeeFichero(String archivo) {
 		 try {		
-			 System.out.println(archivo);
-		this.archivo = new File (archivo);
-        fr = new FileReader (this.archivo);
+			
+		fr = new FileReader (new File (archivo));
         br = new BufferedReader(fr);
 		 }
 	      catch(Exception e){
@@ -36,9 +34,8 @@ public class LeeFichero {
 	 */
 	
 	public void leerFichero() {
-		try {
-	         
-			System.out.println("aqui");
+		try {	         
+			
 	          // Lectura del fichero
 	         String linea;
 	         while((linea=br.readLine())!=null)

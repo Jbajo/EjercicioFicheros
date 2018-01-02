@@ -10,7 +10,6 @@ import java.io.*;
 
 public class EscribeFichero {
 	
-	private FileWriter fichero;
 	private PrintWriter pw;
 	
 	/**
@@ -18,9 +17,8 @@ public class EscribeFichero {
 	 * @param fichero ruta del fichero a escribir
 	 */	
 	public EscribeFichero(String fichero) {
-		try {
-		this.fichero = new FileWriter(fichero, true); //lo abrimos sin sobreescribir el fichero
-		pw = new PrintWriter (this.fichero);
+		try {		
+		pw = new PrintWriter (new FileWriter(fichero, true));//abrimos sin sobreescribir fichero
 		}catch (Exception e) {
 			e.printStackTrace();
 		}

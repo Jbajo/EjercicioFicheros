@@ -11,12 +11,11 @@ public class EjercicioFicherosApplication {
 		
 		LeeFichero fichero = new LeeFichero ("C:\\Users\\Jbajo\\Documents\\workspace-sts-3.9.1.RELEASE\\EjercicioFicheros\\documento.txt");		
 		fichero.leerFichero();
+		fichero.cerrarFichero();
 		
 		EscribeFichero ficherow = new EscribeFichero("C:\\Users\\Jbajo\\Documents\\workspace-sts-3.9.1.RELEASE\\EjercicioFicheros\\documento.txt");
 		ficherow.EscribirFichero("hola mundo");
-		ficherow.EscribirFichero("Texto de ejemplo...");
-		fichero.leerFichero();
-		fichero.cerrarFichero();
+		ficherow.EscribirFichero("Texto de ejemplo...");		
 		ficherow.cerrarFichero();
 	}
 }
