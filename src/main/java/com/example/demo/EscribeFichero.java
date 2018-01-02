@@ -18,7 +18,7 @@ public class EscribeFichero {
 	 */	
 	public EscribeFichero(String fichero) {
 		try {		
-		pw = new PrintWriter (new FileWriter(fichero, true));//abrimos sin sobreescribir fichero
+		pw = new PrintWriter (new FileWriter(fichero, true));//abrimos sin sobreescribir 
 		}catch (Exception e) {
 			e.printStackTrace();
 		}

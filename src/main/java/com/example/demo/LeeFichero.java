@@ -51,7 +51,7 @@ public class LeeFichero {
 	 */
 	public void cerrarFichero() {
 		     try{                    
-	            if( null != fr ){   //cerramos el fichero
+	            if( null != fr ){ //cerramos el fichero
 	               fr.close();     
 	            }                  
 	         }catch (Exception e2){ 
